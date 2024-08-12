@@ -1,0 +1,17 @@
+.container {
+
+    width: 370px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.text {
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.input {
+    width: 360px;
+    border-radius: 4px;
+    height: 24px;
+}

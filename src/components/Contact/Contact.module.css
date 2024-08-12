@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border: 1px solid;
+    border-radius: 16px;
+    width: 360px;
+
+
+}
+
+.list {
+    padding: 12px;
+    width: 140px;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 12px;
+}

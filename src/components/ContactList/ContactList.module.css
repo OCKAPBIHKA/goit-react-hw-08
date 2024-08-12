@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
