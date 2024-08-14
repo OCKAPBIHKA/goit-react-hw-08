@@ -1,13 +1,13 @@
 import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-axios.defaults.baseURL = "https://connections-api.goit.global/";
+const BASE_URL = "https://connections-api.goit.global/";
 
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
   async (_, thunkAPI) => {
     try {
-      const response = await axios.get("/contacts");
+      const response = await axios.get(`${BASE_URL}/contacts`);
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
@@ -43,7 +43,7 @@ export const editContact = createAsyncThunk(
   "contacts/editContact",
   async ({ id, updatedContact }, thunkAPI) => {
     try {
-      console.log("ID in editContact:", id); // Перевірка, чи отримується id
+      console.log("ID in editContact:", id);
       const response = await axios.patch(`/contacts/${id}`, updatedContact);
       return response.data;
     } catch (e) {
